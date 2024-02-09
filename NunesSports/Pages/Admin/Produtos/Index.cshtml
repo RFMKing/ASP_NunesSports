@@ -1,0 +1,46 @@
+﻿@page
+@model NunesSports.Pages.Admin.Produtos.IndexModel
+@{
+}
+
+<h2 class="text-center mb-5">Lista de Produtos</h2>
+
+<div class="row mb-5">
+    <div class="col">
+        <a class="btn btn-primary" href="/Admin/Produtos/Criar">Novo Produto</a>
+    </div>
+    <div class="col">
+
+    </div>
+
+</div>
+
+<table class="table">
+    <tr>
+        <th>Id</th>
+        <th>Nome</th>
+        <th>Categoria</th>
+        <th>Descrição</th>
+        <th>Preço R$</th>
+        <th>Imagem</th>
+        <th>Adicionado em:</th>
+        <th>Action</th>
+    </tr>
+
+    @foreach(var produto in Model.Produtos)
+    {
+        <tr>
+            <td>@produto.Id</td>
+            <td>@produto.Nome</td>
+            <td>@produto.Categoria</td>
+            <td>@produto.Descricao</td>
+            <td>@produto.Preco</td>
+            <td><img src="/img/@produto.NomeImagem" width="100"/></td>
+            <td>@produto.CriadoEm.ToString("dd/MM/yyyy")</td>
+            <td style="white-space:nowrap">
+                <a class="btn btn-primary btn-sm" href="/Admin/Produtos/Editar?id=@produto.Id">Editar</a>
+                <a class="btn btn-danger btn-sm" href="/Admin/Produtos/Deletar?id=@produto.Id">Deletar</a>
+            </td>
+        </tr>
+    }
+</table>
