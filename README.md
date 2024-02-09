@@ -16,7 +16,7 @@ Este projeto foi desenvolvido no Visual Studio, Net 7.0.9, com os seguintes NuGe
 Para banco de dados:
 ```
 -Microsoft® SQL Server® 2022 Express
--Uma cópia do SQL está disponível no diretório acima para ser carregada a fim de ter exemplos prontos de exibição
+-Uma cópia do SQL está disponível no diretório (slq.7z) acima para ser carregada a fim de ter exemplos prontos de exibição
 ```
 Sem essas dependencias instaladas pode haver problemas de execução do site ou acessar os dados do banco de dados.
 
