@@ -25,10 +25,10 @@ Recomendado executar o projeto no modo IIS Express para evitar ter erro de permi
 
 ## Feedback
 
-Agradeço qualquer feedback sobre o codigo e estruturação, especialmente soluções para resolver alteração em inputs do tipo "decimal" para aderirem formato regional en-US (#,###.##) ao inves do pt-BR(#.###,##).
+Agradeço qualquer feedback sobre o código e estruturação, especialmente soluções para resolver alteração em inputs do tipo "decimal" para aderirem formato regional en-US (#,###.##) ao invés do pt-BR(#.###,##).
 
 O projeto somente requisitava o CRUD, mas para aprendizado irei desenvolver features a serem adicionadas em updates:
--Sistema funcional de Cadastro/Login com niveis de acesso
+-Sistema funcional de Cadastro/Login com níveis de acesso
 -Homepage para usuários com Design finalizado
 -Sistema de listagem de produtos, compra, carrinho e pagamento
 -Implementar uma instância do SQL Server pelo Docker e linkar como referencia a um banco de dados em Nuvem ao invés de local.
